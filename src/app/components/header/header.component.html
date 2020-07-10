@@ -1,0 +1,14 @@
+<nav class="navbar navbar-light bg-custom" [ngClass]="{
+    red: this.tableService.invalid && this.tableService.submitted
+  }">
+    <button class="btn btn-outline-light btn-sm" (click)="click()">
+    Obtener Imagen
+  </button>
+    <div *ngIf="this.tableService.invalid && this.tableService.submitted" class="mx-auto font-weight-bold text-monospace text-light">
+        <div class="animate__animated animate__rubberBand">
+            Todos los campos deben estar llenos !!
+        </div>
+    </div>
+</nav>
+
+{{ dataActa |json }}

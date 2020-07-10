@@ -1,0 +1,24 @@
+body {
+  background-color: #eeeeee;
+}
+.vertical {
+  padding: 1%;
+}
+.adjustments {
+  height: 100%;
+}
+.bg-custom {
+  background-color: #673ab7 !important;
+}
+.text-custom {
+  color: #673ab7 !important;
+}
+.red {
+  background-color: #f44336 !important;
+}
+.textRed {
+  color: #f44336 !important ;
+}
+.img {
+  width: 100%;
+}

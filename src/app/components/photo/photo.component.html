@@ -1,0 +1,16 @@
+<mat-card class="text-center">
+    <div *ngIf="tableService.images[0] !== '' && !segunda">
+        <img [src]="tableService.images[0]" class="img" width="50%" />
+    </div>
+    <div *ngIf="tableService.images[0] !== '' && segunda">
+        <img [src]="tableService.images[1]" class="img" />
+    </div>
+    <div *ngIf="tableService.images[0] === ''">
+        <h2>
+            Presione obtener imagen para cargar una imagen
+        </h2>
+    </div>
+    <button *ngIf="tableService.images[0] !== ''" mat-raised-button color="primary" (click)="segundaImagen()" class="mt-4 text-center">
+    Segunda Imagen
+  </button>
+</mat-card>

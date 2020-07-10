@@ -1,0 +1,11 @@
+<mat-card>
+
+    <button *ngIf="this.tableService.id !== '' " mat-raised-button class="btn-block" type="submit" color="primary" (click)="legible()">
+        GUARDAR
+    </button>
+
+    <button *ngIf="this.tableService.id !== ''" mat-raised-button class="btn-block" type="submit" color="primary" (click)="noLegible()">
+        TOMAR OTRA FOTO
+    </button>
+
+</mat-card>
